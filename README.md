@@ -55,11 +55,23 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
                     <li>accounting</li>
                 </ul>
             </li>
+                <p>
+    <img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/520d20d2ff0618b56f85feaf391c866cb1aeec74/create_4_folders.png" height="30%"width="30%" alt="Disk Sanitization Steps"/>
+    </p>
             <li>Set permissions and share folders:
                 <ul>
                     <li><strong>read-access:</strong> Domain Users → Read</li>
+                  <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/520d20d2ff0618b56f85feaf391c866cb1aeec74/readAccess_domain_users.png" height="30%" width ="30%" alt="Disk Sanitization Steps"/>
+</p>
                     <li><strong>write-access:</strong> Domain Users → Read/Write</li>
+                  <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/520d20d2ff0618b56f85feaf391c866cb1aeec74/writeAccess_DomainUsers.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
                     <li><strong>no-access:</strong> Domain Admins → Read/Write</li>
+                  <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/520d20d2ff0618b56f85feaf391c866cb1aeec74/no_access_readwrite.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
                     <li>(Skip accounting for now)</li>
                 </ul>
             </li>
