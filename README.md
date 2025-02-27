@@ -102,15 +102,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
                 <ul>
                     <li>Name: <strong>ACCOUNTANTS</strong></li>
                     <li>Type: <strong>Security Group</strong></li>
+                  <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/2db2dcec3cfa878f21f20c9e7377f1a05d1751e9/accountants_security_group.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
                 </ul>
-            </li>
-            <li>Assign permissions to the <code>accounting</code> folder:
-                <ul>
-                    <li>Group: ACCOUNTANTS</li>
-                    <li>Permissions: Read/Write</li>
-                </ul>
-            </li>
             <li>On <strong>Client-1</strong>, as <code>&lt;someuser&gt;</code>, try to access <code>\\DC-1\accounting</code>. It should fail.</li>
+          <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/2db2dcec3cfa878f21f20c9e7377f1a05d1751e9/No_access_accounting.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
         </ol>
     </details>
 </p>
@@ -119,16 +118,16 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
         <summary><strong>Step 5: Grant User Access & Test Again</strong></summary>
         <ol>
             <li>On <strong>DC-1</strong>, add <code>&lt;someuser&gt;</code> to the <strong>ACCOUNTANTS</strong> group.</li>
+          <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/2db2dcec3cfa878f21f20c9e7377f1a05d1751e9/add_user_to_accounts_group.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
             <li>Log out of <strong>Client-1</strong> as <code>&lt;someuser&gt;</code>.</li>
             <li>Log back in as <code>&lt;someuser&gt;</code>.</li>
             <li>Test access again to <code>\\DC-1\accounting</code>. Does it work now?</li>
+          <p>
+<img src="https://github.com/Drew-Stokes/azure-network-protocols/blob/8be28b51fdbfaf83108ea408aad3cd882cff5614/Sign_back_in-check_accountant_folder.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
         </ol>
     </details>
 </p>
-<p>
-  <details>
-        <summary><strong>Step 6: Clean Up or Continue Practicing</strong></summary>
-        <p>If you are <strong>done</strong>, you can <strong>delete the VMs</strong>.</p>
-        <p>If you want to <strong>save money</strong> but keep practicing, <strong>stop the VMs</strong> in the <strong>Azure Portal</strong>.</p>
-    </details>
-</p>
+
